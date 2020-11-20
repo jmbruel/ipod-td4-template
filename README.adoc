@@ -294,6 +294,21 @@ image::chess.svg[]
 ========
 endif::prof[]
 
+//----------------------------- Question ------------------
+.*QUESTION*
+[WARNING]
+====
+. Commit&Push when everything is ready
++
+ifndef::backend-pdf[.pass:[<i class="fa fa-github"></i>] commit/push]
+ifdef::backend-pdf[.icon:github[] commit/push]
+[source,shell]
+....
+fix #2: State Machines...
+....
++
+====
+
 == Sequence diagrams
 
 The goal is to document the following banking application (`BankAgencyApp`) from some {java} code excerpts.
@@ -423,6 +438,28 @@ ifdef::prof[]
 image::banque-seq-methode.png[]
 ========
 endif::prof[]
+
+//----------------------------- Question ------------------
+.*QUESTION*
+[WARNING]
+====
+. Commit&Push when everything is ready
++
+ifndef::backend-pdf[.pass:[<i class="fa fa-github"></i>] commit/push]
+ifdef::backend-pdf[.icon:github[] commit/push]
+[source,shell]
+....
+fix #3: Sequence diagram...
+....
++
+====
+
+
+//------------------------------------ 
+//------------------------------------ 
+//------------  Let's START----------- 
+//------------------------------------ 
+//------------------------------------ 
 
 :numbered!:
 [appendix]
