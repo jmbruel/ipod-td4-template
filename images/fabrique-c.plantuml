@@ -1,0 +1,35 @@
+@startuml
+'-----------------------------------
+' UML concepts illustrated
+' JMB 2020
+'-----------------------------------
+
+!include config.cfg
+'skinparam classAttributeIconSize 0
+
+
+abstract class c as "Createur" {
+}
+note right: produit = fabrique();
+
+c : {abstract} +fabrique()
+c : +uneOperation()
+
+class CreateurConcret {
+	+fabrique()
+}
+note right: return new ProduitConcret();
+
+together {
+abstract class p as "Produit"
+
+'p <|-- ProduitConcret
+class ProduitConcret
+'c <|-- CreateurConcret
+
+'p "+produit" <- c
+'ProduitConcret <. CreateurConcret
+}
+
+c -[hidden]-> p
+@enduml
