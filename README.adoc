@@ -54,6 +54,8 @@ ifndef::uk[]
 :contrib: Contributeurs
 endif::[]
 :java: https://www.java.com/fr/[Java]
+:asciidoc: http://www.methods.co.nz/asciidoc[AsciiDoc]indexterm:[AsciiDoc]
+:asciidoctorlink: http://asciidoctor.org/[Asciidoctor]indexterm:[Asciidoctor]
 //------------------------------------ 
 
 ifdef::uk[]
