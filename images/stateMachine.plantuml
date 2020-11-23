@@ -1,0 +1,25 @@
+@startuml
+
+!include config.cfg
+
+[*] --> Nominal
+' Red -> Orange : timeout(30s) / flag=false
+' Orange -> Green : timeout(2s) [!flag]
+' Green -> Orange : timeout(30s) / flag=true
+' Orange --> Red : timeout(2s) [flag]
+State Nominal {
+
+[*] --> Red
+Red -> Orange1 : timeout(30s) 
+Orange1 -> Green : timeout(2s)
+Green -> Orange2 : timeout(30s) 
+Orange2 --> Red : timeout(2s)
+}
+
+state Blinking
+
+Nominal -> Blinking : error
+
+Blinking --> Nominal : fix
+
+@enduml

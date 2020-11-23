@@ -1,0 +1,31 @@
+@startuml
+
+!include config.cfg
+skinparam classAttributeIconSize 0
+hide circle
+
+class A
+class B
+
+'Association:
+A - B
+
+'Directed Association:
+A1 -> B1
+
+'Composition
+A1 *-- B5
+
+'Aggregation
+A1 "*" o-- B6
+
+'Generalization (inheritance)
+'Specialization
+A2 -|> B2
+
+A3 "*" --"1" B3
+'A4 B4
+
+'Dependency
+A4 ..> B4
+@enduml

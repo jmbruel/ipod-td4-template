@@ -5,7 +5,7 @@
 '-----------------------------------
 
 !include config.cfg
-'skinparam classAttributeIconSize 0
+skinparam classAttributeIconSize 0
 
 class BankAgency1 {
 	-String name
@@ -57,6 +57,11 @@ class BankAgency5 {
 	+void addAccount(Account newAccount)
 }
 
-
+'Solution:
+' BankAgency1 o-> "*" Account
+' BankAgency2 *--> "*" Account
+' Account "*" <- BankAgency3
+' Account "1" <-- BankAgency5
+' BankAgency4 ..> Account
 
 @enduml
